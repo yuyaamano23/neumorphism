@@ -4,9 +4,52 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Neumorphism</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 	</head>
+	<style>
+		body {
+			background-color: #afdcf3;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+		.flex {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			gap: 0px 100px;
+		}
+
+		.neumorphism {
+			width: 300px;
+			height: 300px;
+			border-radius: 57px;
+			background: #afdcf3;
+			box-shadow: 9px 9px 18px #95bbcf, -9px -9px 18px #c9fdff;
+		}
+
+		.neumorphism:active {
+			box-shadow: inset 9px 9px 18px #95bbcf, inset -9px -9px 18px #c9fdff;
+		}
+
+		.neumorphism2 {
+			width: 236px;
+			height: 236px;
+			border-radius: 50%;
+			background: linear-gradient(145deg, #bbebff, #9ec6db);
+			box-shadow: 24px 24px 47px #93b9cc, -24px -24px 47px #cbffff;
+		}
+
+		.neumorphism2:active {
+			background: linear-gradient(145deg, #9ec6db, #bbebff);
+		}
+	</style>
 	<body>
-		<div>Neumorphism</div>
+		<div class="flex">
+			<div class="neumorphism"></div>
+			<div class="neumorphism2"></div>
+		</div>
 	</body>
 </html>
